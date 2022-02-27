@@ -1,8 +1,9 @@
 <template>
   <div class="home">
-    <q-btn color="primary" label="Dialog with component" @click="openIt" />
-    <q-btn label="Dialog with setting" color="primary" @click="alert" />
-    <h1>003</h1>
+    <h1>Dialog-Plugin</h1>
+    <q-btn color="primary" label="Dialog with component" @click="openComponent" />
+
+    <q-btn label="Dialog " color="primary" @click="alert" class="q-ma-md" />
   </div>
 </template>
 
@@ -12,7 +13,7 @@ import DialogComponentVue from '@/components/DialogComponent.vue'
 
 const $q = useQuasar()
 
-function openIt() {
+function openComponent() {
   $q.dialog({
     component: DialogComponentVue,
   })

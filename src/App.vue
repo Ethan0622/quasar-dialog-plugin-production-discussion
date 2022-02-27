@@ -1,8 +1,8 @@
 <template>
   <q-layout view="hhh lpR fff" class="bg-color">
-    <q-header class="bg-navBar">
+    <q-header class="text-center bg-navBar">
       <q-toolbar>
-        <q-toolbar-title>考试系统</q-toolbar-title>
+        <q-toolbar-title>Header</q-toolbar-title>
       </q-toolbar>
     </q-header>
 
@@ -12,7 +12,7 @@
 
     <q-footer class="text-center bg-navBar">
       <q-separator />
-      <div class="q-py-md">© Ethan 版权所有</div>
+      <div class="q-py-md">Footer</div>
     </q-footer>
   </q-layout>
 </template>
@@ -28,5 +28,9 @@
 }
 .bg-color {
   background-color: #f8f9fa;
+}
+
+.bg-navBar {
+  color: gray;
 }
 </style>
